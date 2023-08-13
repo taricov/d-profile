@@ -45,16 +45,18 @@
 
     <div class="container px-6 py-16 mx-auto text-center">
         <div class="max-w-lg mx-auto">
-    <h1 class="app-grad bg-clip-text text-transparent font-bold text-center text-[120px] py-6">D-Profile</h1>
+    <h1 class="app-grad bg-clip-text text-transparent font-bold text-center text-[120px] pt-6">D-Profile</h1>
 
-            <p class="mt-6 text-[#723456]">D-Profile will help you build a profile page - About page - for your company in less than 2 minutes.</p>
-            <a href="/builder" class="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center capitalize app-grad
- rounded-lg lg:mx-0 lg:w-auto focus:outline-none shadow hover:opacity-90 transform hover:-translate-y-1 transition duration-300 !border-0 text-slate-200 ">
+            <p class="mb-10 text-[#723456] text-xl font-semibold bg-[#723456]/20 rounded-md py-3">D-Profile will help you build a profile page - About page - for your company in less than 2 minutes.</p>
+            <a href="/builder" class="px-5 py-2 mt-6 text-xl font-semibold leading-5 text-center capitalize app-grad
+ rounded-lg lg:mx-0 lg:w-auto focus:outline-none shadow hover:opacity-90 transform hover:-translate-y-1 transition duration-300 !border-0 text-slate-200">
                 Start Now
-                <icon name="mdi:arrow" class="h-4 w-4" />
+                <icon name="mdi:arrow" class="transform rotate-180 h-4 w-4" />
 
             </a>
-            <p class="mt-3 text-sm text-gray-400 ">No credit card required</p>
+            <p class="mt-3 text-sm text-gray-800/70 ">It's Free and <a class="mt-3 text-sm text-gray-800 hover:text-gray-800/50 transition duration-300" href="/buildergi">
+                Open-source</a>
+            </p>
         </div>
 
         <div class="flex justify-center mt-10">
