@@ -121,10 +121,10 @@ const prefillDemoData = () => {
 };
 
 const publish = async () => {
-  const url = `${window.location.origin}/1?data=${encodeData(data.value)}`;
+  const url = `${window.location.origin}/your-page?data=${encodeData(data.value)}`;
   // shortener goes here (shortening will be via api endpoint)
   const shortenedURL = await urlShortener(url)
-  console.log(shortenedURL)
+  // console.log(shortenedURL)
   navigator.clipboard.writeText(shortenedURL).then(() => {
     alert("Link copied to clipboard");
   });

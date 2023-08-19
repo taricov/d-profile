@@ -1,5 +1,5 @@
 <template>
-  <main class="p-4 bg-slate-200 bg-[#c198ab]/20 h-full w-full space-y-8 pt-12 max-w-lg mx-auto">
+  <main class="p-4 bg-slate-200 bg-[#c198ab]/20 h-screen w-full space-y-8 pt-12 mx-auto">
     <div class="text-center">
       <div
         v-if="acc.i"
@@ -69,7 +69,8 @@
         </a>
       </span>
     </div>
-    <ul class="space-y-2">
+    <div class="w-1/3 mx-auto ">
+    <ul class="space-y-2 mx-auto w-fit">
       <ExternalLink
         v-for="(link, id) in acc.ls"
         :label="link.l"
@@ -78,6 +79,7 @@
         :key="id"
       />
     </ul>
+    </div>
   </main>
 </template>
 <script setup>
