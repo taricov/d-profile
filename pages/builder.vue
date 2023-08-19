@@ -78,41 +78,41 @@ const data = ref({
 
 const prefillDemoData = () => {
   data.value = {
-    n: "John Snow",
-    d: "I’m John Snow, the king in the north. I know Nothing.",
-    i: "https://i.insider.com/56743fad72f2c12a008b6cc0",
-    f: "https://www.facebook.com/john_snow",
-    t: "https://twitter.com/john_snow",
-    ig: "https://www.instagram.com/john_snow",
-    e: "mail@john_snow.cc",
-    gh: "https://github.com/john_snow",
-    tg: "https://t.me/john_snow",
-    w: "+918888888888",
-    y: "https://youtube.com/@john_snow",
-    l: "https://linkedin.com/john_snow",
+    n: "El Etihad Co.",
+    d: "El Etihad Co. for cosmatics and beauty products.",
+    i: "https://ih1.redbubble.net/image.1675601216.9140/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg",
+    f: "https://www.facebook.com/",
+    t: "https://twitter.com/",
+    ig: "https://www.instagram.com",
+    e: "eletihad@gmail.com",
+    gh: "https://github.com",
+    tg: "https://t.me/",
+    w: "+966 404 3243",
+    y: "https://youtube.com",
+    l: "https://linkedin.com",
     ls: [
       {
         l: "My Website",
         i: "ph:globe-duotone",
-        u: "https://example.com",
+        u: "https://eletihad.com",
       },
       {
-        l: "Amazon wishlist",
+        l: "Amazon Affiliation",
         i: "ant-design:amazon-outlined",
         u: "https://amazon.in",
       },
       {
-        l: "React JS course",
+        l: "This is a website",
         i: "grommet-icons:reactjs",
-        u: "https://reactjs.org/",
+        u: "https://fff.com/",
       },
       {
-        l: "Donate for our cause",
+      l: "Another Website",
         i: "iconoir:donate",
         u: "https://who.int",
       },
       {
-        l: "Download my resume",
+        l: "Others",
         i: "ph:file-pdf",
         u: "https://google.com",
       },
@@ -120,11 +120,15 @@ const prefillDemoData = () => {
   };
 };
 
-const publish = () => {
+const publish = async () => {
   const url = `${window.location.origin}/1?data=${encodeData(data.value)}`;
-  navigator.clipboard.writeText(url).then(() => {
+  // shortener goes here (shortening will be via api endpoint)
+  const shortenedURL = await urlShortener(url)
+  console.log(shortenedURL)
+  navigator.clipboard.writeText(shortenedURL).then(() => {
     alert("Link copied to clipboard");
   });
+
 };
 </script>
 <style>
