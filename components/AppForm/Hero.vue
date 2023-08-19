@@ -25,21 +25,19 @@
         <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
         <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
             <div class="flex flex-col space-y-4 lg:mt-0 lg:flex-row lg:-px-8 lg:space-y-0">
-                <a class="text-[#723456]
- transition-colors duration-300 transform lg:mx-8 hover:text-[#723456]/70"
- href="#">Home</a>
-                <a class="transition-colors duration-300 transform lg:mx-8 hover:text-[#723456]/70"
- href="#">Components</a>
-                <a class="transition-colors duration-300 transform lg:mx-8 hover:text-[#723456]/70"
- href="#">Pricing</a>
-                <a class="transition-colors duration-300 transform lg:mx-8 hover:text-[#723456]/70"
- href="#">Contact</a>
-            </div>
 
-            <a class="block px-5 py-2 mt-4 text-sm text-center  capitalize bg-blue-600 rounded-lg lg:mt-0 hover:text-[#723456]/70
- lg:w-auto" href="#">
+            <a target="_blank" class="block px-5 py-2 mt-4 text-sm text-center  capitalize bg-blue-600 rounded-lg lg:mt-0 hover:text-[#723456]/70
+ lg:w-auto" href="/builder">
                 Get started
             </a>
+            <a target="_blank" class="block px-5 py-2 mt-4 text-sm text-center  capitalize bg-blue-600 rounded-lg lg:mt-0 hover:text-[#723456]/70
+ lg:w-auto"
+ href="https://github.com/taricov/d-profile">Source Code</a>      
+                <a target="_blank" class="block px-5 py-2 mt-4 text-sm text-center  capitalize bg-blue-600 rounded-lg lg:mt-0 hover:text-[#723456]/70
+ lg:w-auto" 
+ href="https://linkedin.com/in/taricov">Author</a>
+            </div>
+
         </div>
     </nav>
 
@@ -60,10 +58,28 @@
         </div>
 
         <div class="flex justify-center mt-10">
-            <img class="object-cover w-full h-96 rounded-xl lg:w-4/5" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80" />
+            <img class="object-cover w-full h-96 rounded-xl lg:w-4/5" src="https://i.ibb.co/sqb4QhH/SCR-20230820-211-2.png" />
         </div>
     </div>
 </section>
+<a
+      href="https://linkedin.com/in/taricov"
+      target="_blank"
+      class="fixed w-full h-24 flex justify-center items-center !border-0 bottom-0 right-0 bg-slate-800 shadow py-1 mx-auto hover:bg-slate-900 hover:text-slate-50 font-medium text-md text-center text-slate-100 app-grad hover:opacity-90 transition duration-300"
+    >
+    <span class="">
+      Made by Taric Ov
+<br/>
+<span class="flex justify-center items-center">
+with love &nbsp;
+<svg width="19" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path fill="none" stroke="currentColor" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z"/>
+</svg>
+</span>
+
+
+    </span>
+    </a>
 </template>
 <style scoped>
 .app-grad{
