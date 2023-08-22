@@ -49,7 +49,7 @@
             <a href="/builder" class="px-5 py-2 mt-6 text-xl font-semibold leading-5 text-center capitalize app-grad
  rounded-lg lg:mx-0 lg:w-auto focus:outline-none shadow hover:opacity-90 transform hover:-translate-y-1 transition duration-300 !border-0 text-slate-200">
                 Start Now
-                <icon name="mdi:arrow" class="transform rotate-180 h-4 w-4" />
+                <!-- <icon name="mdi:arrow" class="transform rotate-180 h-4 w-4" /> -->
 
             </a>
             <p class="mt-3 text-sm text-gray-800/70 ">It's Free and <a class="mt-3 text-sm text-gray-800 hover:text-gray-800/50 transition duration-300" href="/buildergi">
