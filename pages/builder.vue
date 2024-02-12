@@ -37,7 +37,7 @@
 
             </div>
         </nav> -->
-  <div class="h-screen grid lg:grid-cols-3 grid-cols-1 divide-x">
+  <div class="h-screen grid lg:grid-cols-1 grid-cols-1 divide-x">
     <div class="col-span-2 h-screen flex flex-col bg-[#c198ab]/50">
       <div class="flex-1 overflow-y-auto p-8">
         <app-form-profile
@@ -85,7 +85,7 @@
         </a> -->
       </div>
     </div>
-    <app-form-preview :data="data" />
+    <!-- <app-form-preview :data="data" /> -->
     <a
       href="https://linkedin.com/in/taricov"
       target="_blank"
